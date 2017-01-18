@@ -1,0 +1,11 @@
+RewriteEngine On
+# For security reasons, Option followsymlinks cannot be overridden.
+#Options +FollowSymlinks All -Indexes
+# For security reasons, Option all cannot be overridden.
+#Options +SymLinksIfOwnerMatch All -Indexes
+Options SymLinksIfOwnerMatch ExecCGI Includes IncludesNOEXEC -Indexes
+RewriteBase /
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?path=$1
