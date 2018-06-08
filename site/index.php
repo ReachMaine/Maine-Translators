@@ -23,7 +23,7 @@ $page = $path[0];
 <html>
 <head>
 <title>Association of Maine Interpreters and Translations</title>
-<base href="http://www.mainetranslators.org/" />
+<base href="https://www.mainetranslators.org/" />
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <meta name="description" content="" />
 <meta name="keywords" content="" />
